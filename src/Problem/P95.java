@@ -23,7 +23,6 @@ public class P95 {
 
 		int num = 2, divisorSum = 0, temp = 0, longest = 1, longestMin = 0;
 		for (num = 2; num <= limit; num++) {
-			System.out.println("Processing: " + num);
 			if (!visited[num - 1]) {
 				visited[num - 1] = true;
 				chain.clear();
@@ -42,7 +41,7 @@ public class P95 {
 						int length = chain.size() - chain.indexOf(divisorSum);
 						if (length > longest) {
 							System.out.print("Longer chain found: ");
-							length = longest;
+							longest = length;
 							for (int i = chain.indexOf(divisorSum); i < chain.size(); i++){
 								System.out.print(chain.get(i));
 								System.out.print(" --> ");
@@ -55,6 +54,7 @@ public class P95 {
 				}
 			}
 		}
+		System.out.println("Min value in chain is: " + longestMin);
 	}
 
 }
