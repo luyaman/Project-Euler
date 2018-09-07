@@ -1,12 +1,4 @@
 package Problem;
-
-<<<<<<< HEAD
-public class P95 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-=======
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -62,7 +54,7 @@ public class P95 {
 			}
 		}
 		System.out.println("Min value in chain is: " + longestMin);
->>>>>>> attempting
+
 	}
 
 }
